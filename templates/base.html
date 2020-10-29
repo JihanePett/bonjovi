@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% end block %}
+    {% endblock %}
 
     {% block extrameta %}
     {% endblock %}
@@ -34,8 +34,19 @@
 
   </head>
   <body>
+  <header class="container-fluid fixed-top">
+  {% if messages %}
+  <div class="message-container"></div>
+  {% endif %}
+  </header>
+  {% block page-header %}
+  {% endblock %}
 
- 
+  {% block content %}
+  {% endblock %}
+
+  {% block postloadjs %}
+  {% endblock %}
 
   </body>
 </html>

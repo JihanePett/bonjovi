@@ -3,7 +3,7 @@ height: 100%;
 }
 
 body {
-background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+background: url('/media/jonbonjovimic.jpg') no-repeat center center fixed;
 background-size: cover;
 height: calc(100vh - 164px);
 color: #555;
@@ -28,8 +28,8 @@ width: fit-content;
 }
 
 .shop-now-button {
-background: black;
-color: white;
+background: white;
+color: black;
 min-width: 260px;
 }
 
@@ -47,10 +47,6 @@ color: white;
 .btn-black:focus {
 background: #222;
 color: white;
-}
-
-.text-black {
-color: #000 !important;
 }
 
 .border-black {

@@ -1,5 +1,4 @@
 [{"pk": 1, "model": "products.category", "fields": {"name": "apparel", "friendly_name": "apparel"}},
-{"pk": 2, "model": "products.category", "fields": {"name": "media", "friendly_name": "media"}},
 {"pk": 3, "model": "products.category", "fields": {"name": "accessories", "friendly_name": "accessories"}},
 {"pk": 4, "model": "products.category", "fields": {"name": "media", "friendly_name": "media"}}
 ]

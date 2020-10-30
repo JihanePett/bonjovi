@@ -64,6 +64,16 @@ border: 1px solid black !important;
     z-index: -1;
 }
 
+.overlay.overlay-pdt-details{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #bdb8b8;
+    z-index: -1;
+}
+
 .btn-secondary {
     background-color: #b6babd;
     border-color: #b6babd;

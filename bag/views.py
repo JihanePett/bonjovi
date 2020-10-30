@@ -4,5 +4,5 @@ from django.shortcuts import render
 """ A view that renders the shopping bag contents page """
 
 
-def index(request):
+def view_bag(request):
     return render(request, 'bag/bag.html')

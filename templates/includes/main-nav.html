@@ -13,7 +13,7 @@
                 <a href="{% url 'products' %}?category=apparel" class="dropdown-item">Apparel</a>
                 <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
                 <a href="{% url 'products' %}?category=media" class="dropdown-item">Media</a>
-                <a href="{% url 'products' %}" class="dropdown-item">Shop All</a>
+                <a href="{% url 'products' %}?category=apparel,accessories,media" class="dropdown-item">Shop All</a>
             </div>
         </li>
 
@@ -28,7 +28,6 @@
                 Tours
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="tours-link">
-                <a href="" class="dropdown-item"></a>
                 <a href="" class="dropdown-item">Tickets</a>
                 <a href="" class="dropdown-item">News</a>
             </div>

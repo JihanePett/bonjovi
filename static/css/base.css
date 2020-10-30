@@ -60,7 +60,7 @@ border: 1px solid black !important;
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: black;
     z-index: -1;
 }
 

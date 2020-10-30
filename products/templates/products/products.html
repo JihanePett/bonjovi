@@ -116,4 +116,20 @@
     </div>
   </div>
 </div>
+
+ <div class="arrow-up-button shadow-sm rounded-0 border border-black">
+        <a class="arrow-up-link d-flex h-100">
+            <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
+        </a>	
+    </div>
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('.btt-link').click(function(e) {
+            window.scrollTo(0,0)
+        })
+    </script>
+{% endblock %}
+
 {% endblock %}

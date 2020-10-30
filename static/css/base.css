@@ -5,6 +5,7 @@ height: 100%;
 body {
 background: url('/media/jonbonjovimic.jpg') no-repeat center center fixed;
 background-size: cover;
+padding-top: 15%;
 height: calc(100vh - 164px);
 color: #555;
 font-family: 'Montserrat';
@@ -27,7 +28,7 @@ text-transform: uppercase;
 width: fit-content;
 }
 
-.shop-now-button {
+.out-now-button {
 background: white;
 color: black;
 min-width: 260px;

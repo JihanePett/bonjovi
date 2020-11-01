@@ -1,42 +1,83 @@
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'home' %}" id="home-link">
-                Home
-            </a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'products' %}" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank">
-                Shop
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="shop-link">
-                <a href="{% url 'products' %}?category=apparel" class="dropdown-item">Apparel</a>
-                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
-                <a href="{% url 'products' %}?category=media" class="dropdown-item">Media</a>
-                <a href="{% url 'products' %}?category=apparel,accessories,media" class="dropdown-item">Shop All</a>
-            </div>
-        </li>
+  <ul class="navbar-nav w-auto mx-auto">
+    <div class="left nav-items">
+      <li class="nav-item">
+        <a
+          class="logo-font font-weight-bold nav-link text-white mr-5"
+          href="{% url 'home' %}"
+          id="home-link"
+        >
+          Home
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="logo-font font-weight-bold nav-link text-white mr-5"
+          href="{% url 'products' %}"
+          id="shop-link"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          target="_blank"
+        >
+          Shop  <i class="fas fa-caret-down"></i>
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="shop-link">
+          <a href="{% url 'products' %}?category=apparel" class="dropdown-item"
+            >Apparel</a
+          >
+          <a
+            href="{% url 'products' %}?category=accessories"
+            class="dropdown-item"
+            >Accessories</a
+          >
+          <a href="{% url 'products' %}?category=media" class="dropdown-item"
+            >Media</a
+          >
+          <a
+            href="{% url 'products' %}?category=apparel,accessories,media"
+            class="dropdown-item"
+            >Shop All</a
+          > 
+        </div>
+      </li>
+    </div>
+    <div class="nav-item nav-logo">
+      <a href="/">
+        <img
+          src="//cdn.shopify.com/s/files/1/1347/4217/files/checkout_logo_5_410x.png?v=1471135025"
+          alt="Bon Jovi Online"
+          class="logo-img"
+        />
+      </a>
+    </div>
+    <div class="right nav-items">
+      <li class="nav-item">
+        <a
+          class="logo-font font-weight-bold nav-link text-white mr-5"
+          href="#"
+          id="music-link"
+        >
+          Music
+        </a>
+      </li>
 
-        <li class="nav-item nav-logo">
-            <a href="/">
-                <img src="//cdn.shopify.com/s/files/1/1347/4217/files/checkout_logo_5_410x.png?v=1471135025" alt="Bon Jovi Online" class="logo-img">
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="music-link">
-                Music
-            </a>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white" href="#" id="tours-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tours
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="tours-link">
-                <a href="" class="dropdown-item">Tickets</a>
-                <a href="" class="dropdown-item">News</a>
-            </div>
-        </li>
-    </ul>
+      <li class="nav-item dropdown">
+        <a
+          class="logo-font font-weight-bold nav-link text-white"
+          href="#"
+          id="tours-link"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Tours  <i class="fas fa-caret-down"></i>
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="tours-link">
+          <a href="" class="dropdown-item">Tickets</a>
+          <a href="" class="dropdown-item">News</a>
+        </div>
+      </li>
+    </div>
+  </ul>
 </div>

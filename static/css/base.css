@@ -134,4 +134,8 @@ div#delivery-banner {
     height: calc(100vh - 116px);
     padding-top: 0;
   }
+
+  .nav-logo{
+      display: none;
+  }
 }

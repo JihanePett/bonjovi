@@ -28,30 +28,29 @@ body {
   width: fit-content;
 }
 
+div#delivery-banner {
+    margin-bottom: 40px;
+}
+
 .out-now-button {
   background: white;
   color: black;
   min-width: 260px;
 }
 
-.btn-black {
-  background: black;
-
-  color: white;
+.btn-white {
+  background: white;
+  color: black;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.out-now-button:hover,
+.out-now-button:active,
+.out-now-button:focus,
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus {
   background: #222;
   color: white;
-}
-
-.border-black {
-  border: 1px solid black !important;
 }
 
 .overlay {

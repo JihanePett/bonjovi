@@ -38,11 +38,26 @@ body {
   width: 46%;
 }
 
+.carousel-caption.top-caption {
+    margin-bottom: 550px;
+}
+
+.carousel-caption.left-caption {
+    margin-bottom: 500px;
+    margin-right: 400px;
+}
+
 div#delivery-banner {
   margin-bottom: 40px;
 }
 
-.out-now-button {
+.sort-btn {
+    margin-left: 10px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.findout-button {
   background: white;
   color: black;
   min-width: 260px;
@@ -73,20 +88,10 @@ div#delivery-banner {
   z-index: -1;
 }
 
-.overlay.overlay-pdt-details {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: #bdb8b8;
-  z-index: -1;
+.overlay-pdts, .overlay-pdt-details{
+background: #94720c94;
 }
 
-.btn-secondary {
-  background-color: #b6babd;
-  border-color: #b6babd;
-}
 
 .arrow-up-button {
   height: 42px;

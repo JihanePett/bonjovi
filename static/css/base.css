@@ -47,6 +47,18 @@ body {
     margin-right: 400px;
 }
 
+.card.card-bj2020 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    display: block;
+}
+
+.card.mb-3 {
+    border: none;
+    margin-top: 10px;
+}
+
 div#delivery-banner {
   margin-bottom: 40px;
 }

@@ -89,13 +89,10 @@
 </div>
 
 <div class="container h-100">
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">BON JOVI 2020</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-  </div>
-  <img class="card-img-bottom" src="" alt="bonjovi2020">
+<div class="row h-100">
+<div class="card card-bj2020 mx-auto">
+  <img class="card-img-bottom" src="https://i.iheart.com/v3/re/new_assets/5f726a34da732c0b2395da1e?ops=contain(740,0)" alt="bonjovi2020">
+</div>
 </div>
 </div>
 
@@ -121,7 +118,7 @@
             fractures in the current American landscape. It’s his attempt to, as
             he puts it, “bear witness to history.”
           </p>
-          <a href="#" class="card-link">Read more...</a>
+          <a href="{% url 'bjcards' %}#jbjnews" class="card-link">Read more...</a>
         </div>
       </div>
       <div class="card">
@@ -143,7 +140,7 @@
             already leaning into a more cultural awareness than a lot of
             straight-up rock & roll, could be so much more.
           </p>
-          <a href="#" class="card-link">Read more...</a>
+          <a href="{% url 'bjcards' %}#posterboy" class="card-link">Read more...</a>
         </div>
       </div>
       <div class="card">
@@ -173,7 +170,7 @@
             "Beatle Paul," his philanthropic foundation and his favorite
             lyricists.
           </p>
-          <a href="#" class="card-link">Read more...</a>
+          <a href="{% url 'bjcards' %}#powerful20" class="card-link">Read more...</a>
         </div>
       </div>
     </div>

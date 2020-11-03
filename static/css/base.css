@@ -7,7 +7,7 @@ body {
   background-size: cover;
   padding-top: 15%;
   height: calc(100vh - 164px);
-  color: #555;
+  color: #fafafa;
   font-family: "Montserrat";
 }
 
@@ -48,10 +48,9 @@ body {
 }
 
 .card.card-bj2020 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
     border: none;
-    display: block;
+    width: 50%;
 }
 
 .card.mb-3 {
@@ -60,7 +59,15 @@ body {
 }
 
 div#delivery-banner {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.table-header {
+    text-align: center;
+}
+
+.table-responsive.rounded {
+    background-color: white;
 }
 
 .sort-btn {
@@ -99,11 +106,6 @@ div#delivery-banner {
   background: black;
   z-index: -1;
 }
-
-.overlay-pdts, .overlay-pdt-details{
-background: #94720c94;
-}
-
 
 .arrow-up-button {
   height: 42px;

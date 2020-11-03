@@ -7,7 +7,7 @@ body {
   background-size: cover;
   padding-top: 15%;
   height: calc(100vh - 164px);
-  color: #fafafa;
+  color: black;
   font-family: "Montserrat";
 }
 
@@ -21,6 +21,7 @@ body {
   color: white;
 }
 
+/* Search form */
 .search-form {
     background-color: transparent;
 }
@@ -29,6 +30,7 @@ body {
     margin-top: 20px;
 }
 
+/* logo */
 .nav-logo {
   text-align: center;
   margin: 0 auto;
@@ -38,6 +40,7 @@ body {
   width: 46%;
 }
 
+/* caroussel */
 .carousel-caption.top-caption {
     margin-bottom: 550px;
 }
@@ -47,10 +50,12 @@ body {
     margin-right: 400px;
 }
 
+/* cards articles */
 .card.card-bj2020 {
     margin-top: 30px;
     border: none;
     width: 50%;
+    margin-bottom: 20px;
 }
 
 .card.mb-3 {
@@ -58,10 +63,16 @@ body {
     margin-top: 10px;
 }
 
+.card.cards-article {
+    border: none;
+}
+
+/* delivery banner */
 div#delivery-banner {
   margin-bottom: 20px;
 }
 
+/* Table bag content */
 .table-header {
     text-align: center;
 }
@@ -70,6 +81,7 @@ div#delivery-banner {
     background-color: white;
 }
 
+/* Buttons */
 .sort-btn {
     margin-left: 10px;
     background-color: transparent;
@@ -97,6 +109,7 @@ div#delivery-banner {
   color: white;
 }
 
+/* overlay */
 .overlay {
   height: 100%;
   width: 100%;
@@ -107,6 +120,7 @@ div#delivery-banner {
   z-index: -1;
 }
 
+/* arrows */
 .arrow-up-button {
   height: 42px;
   width: 42px;
@@ -120,7 +134,7 @@ div#delivery-banner {
 }
 
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* The flip card container */
 .flip-card-row {
     margin-bottom: 20px;
 }
@@ -130,10 +144,9 @@ div#delivery-banner {
   width: 550px;
   height: 550px;
   border: none;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -143,12 +156,10 @@ div#delivery-banner {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -157,7 +168,6 @@ div#delivery-banner {
   backface-visibility: hidden;
 }
 
-/* Style the back side */
 .flip-card-back {
   background-color: white;
   color: black;

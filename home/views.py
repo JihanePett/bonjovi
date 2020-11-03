@@ -9,3 +9,7 @@ def index(request):
 
 def bjcards(request):
     return render(request, 'home/bjcards.html')
+
+
+def music(request):
+    return render(request, 'home/music.html')

@@ -133,6 +133,11 @@ div#delivery-banner {
   cursor: pointer;
 }
 
+/* update/delete cursor in shopping bag */
+.btt-link, .update-link, .remove-item {
+cursor: pointer;
+}
+
 
 /* The flip card container */
 .flip-card-row {

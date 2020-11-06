@@ -62,8 +62,9 @@
                 N/A {% endif %}
               </p>
             </td>
+            
             <td class="py-5 w-25">
-              <form class="form update-form" method="POST" action="">
+              <form class="form update-form" method="POST" action="{% url 'update_bag' item.item_id %}">
                 {% csrf_token %}
                 <div class="form-group">
                   <div class="input-group">
@@ -186,18 +187,17 @@
         form.submit();
     })
 
-    // Remove item and reload on click
+    // Delete item and reload on click
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('size');
-        var url = `/bag/remove/${itemId}`;
+        var url = `/bag/delete/${itemId}/`;
         var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
-
         $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
+            .done(function() {
+                location.reload();
+            });
     })
 </script>
 {% endblock %}

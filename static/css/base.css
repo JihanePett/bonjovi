@@ -3,12 +3,16 @@ html {
 }
 
 body {
-  background: url("https://cdncozygalleryp.addons.business/10626/cig-cozy-gallery-3907Glp-_MG_2064_London_Abbey-Road--1--xxl.jpg?c=10") no-repeat center center fixed;
+  background: url("https://cdncozycig.addons.business/10626/cig-cozy-gallery-3907jOq-20180408_Bon_Jovi_Newark_1299-xxl.jpeg?c=13") no-repeat center center fixed;
   background-size: cover;
-  padding-top: 15%;
+  padding-top: 20%;
   height: calc(100vh - 164px);
   color: black;
   font-family: "Montserrat";
+}
+
+.fixed-top-desktop-only{
+    background-color: #0e0906;
 }
 
 /* from Bulma */
@@ -16,14 +20,34 @@ body {
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  height: 1.2rem;
-  width: 1.2rem;
-  color: white;
+  height: 1.1rem;
+  width: 1.1rem;
+  color: #dddcdf;
+}
+
+i.fas.fa-chevron-left, i.fas.fa-plus, i.fas.fa-minus{
+    color: black;
+}
+
+i.fas.fa-chevron-left:hover{
+    color: #dddcdf;
 }
 
 /* Search form */
 .search-form {
     background-color: transparent;
+    color: #dddcdf;
+}
+
+input.form-control.border.border-black.rounded-0.search-form[type=text] {
+  width: 100px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input.form-control.border.border-black.rounded-0.search-form[type=text]:focus {
+  width: 100%;
 }
 
 .row.main-navbar {
@@ -31,11 +55,6 @@ body {
 }
 
 /* logo */
-.nav-logo {
-  text-align: center;
-  margin: 0 auto;
-}
-
 .logo-img {
   width: 46%;
 }
@@ -67,6 +86,10 @@ body {
     border: none;
 }
 
+.card.h-100.border-0 {
+    background-color: #dddcdf;
+}
+
 /* delivery banner */
 div#delivery-banner {
   margin-bottom: 20px;
@@ -77,8 +100,13 @@ div#delivery-banner {
     text-align: center;
 }
 
+h2.mb-4.shoppingbag-text {
+    color: #e63b3b;
+    margin-top: 20px;
+}
+
 .table-responsive.rounded {
-    background-color: white;
+    background-color: #fafafa;
 }
 
 /* Buttons */
@@ -89,13 +117,14 @@ div#delivery-banner {
 }
 
 .findout-button {
-  background: white;
+  background: #dddcdf;
   color: black;
   min-width: 260px;
+  text-decoration: none;
 }
 
 .btn-white {
-  background: white;
+  background: #dddcdf;
   color: black;
 }
 
@@ -106,17 +135,16 @@ div#delivery-banner {
 .btn-white:active,
 .btn-white:focus {
   background: #222;
-  color: white;
+  color: #dddcdf;
 }
 
 /* overlay */
 .overlay {
-  height: 40%;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   position: fixed;
-  background: black;
   z-index: -1;
 }
 
@@ -134,7 +162,7 @@ div#delivery-banner {
 }
 
 .pdt-detail-row{
-    background-color: #fafafa;
+    background-color: #dddcdf;
 }
 /* update/delete cursor in shopping bag */
 .btt-link, .update-link, .remove-item {
@@ -148,7 +176,7 @@ cursor: pointer;
 }
 
 .flip-card {
-  background-color: white;
+  background-color: #dddcdf;
   width: 550px;
   height: 550px;
   border: none;
@@ -177,7 +205,7 @@ cursor: pointer;
 }
 
 .flip-card-back {
-  background-color: white;
+  background-color: #dddcdf;
   color: black;
   transform: rotateY(180deg);
 }

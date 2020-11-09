@@ -83,4 +83,3 @@ def delete_from_bag(request, item_id):
 
     except Exception as e:
         return HttpResponse(status=500)
-

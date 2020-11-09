@@ -22,7 +22,7 @@ body {
   justify-content: center;
   height: 1.1rem;
   width: 1.1rem;
-  color: #dddcdf;
+  color: #fbf7ee;
 }
 
 i.fas.fa-chevron-left, i.fas.fa-plus, i.fas.fa-minus{
@@ -30,13 +30,13 @@ i.fas.fa-chevron-left, i.fas.fa-plus, i.fas.fa-minus{
 }
 
 i.fas.fa-chevron-left:hover{
-    color: #dddcdf;
+    color: #fbf7ee;
 }
 
 /* Search form */
 .search-form {
     background-color: transparent;
-    color: #dddcdf;
+    color: #fbf7ee;
 }
 
 input.form-control.border.border-black.rounded-0.search-form[type=text] {
@@ -55,6 +55,10 @@ input.form-control.border.border-black.rounded-0.search-form[type=text]:focus {
 }
 
 /* logo */
+.nav-logo {
+    text-align: center;
+}
+
 .logo-img {
   width: 46%;
 }
@@ -87,7 +91,13 @@ input.form-control.border.border-black.rounded-0.search-form[type=text]:focus {
 }
 
 .card.h-100.border-0 {
-    background-color: #dddcdf;
+    background-color: #fbf7ee;
+}
+
+a.music-link.btn-white.btn-lg.rounded-0.text-uppercase {
+    background-color: #a82a28;
+    text-decoration: none;
+    margin-left: 30%;
 }
 
 /* delivery banner */
@@ -117,15 +127,16 @@ h2.mb-4.shoppingbag-text {
 }
 
 .findout-button {
-  background: #dddcdf;
+  background: #fbf7ee;
   color: black;
   min-width: 260px;
   text-decoration: none;
 }
 
 .btn-white {
-  background: #dddcdf;
+  background: #fbf7ee;
   color: black;
+  text-decoration: none;
 }
 
 .out-now-button:hover,
@@ -135,7 +146,7 @@ h2.mb-4.shoppingbag-text {
 .btn-white:active,
 .btn-white:focus {
   background: #222;
-  color: #dddcdf;
+  color: #fbf7ee;
 }
 
 /* overlay */
@@ -162,7 +173,7 @@ h2.mb-4.shoppingbag-text {
 }
 
 .pdt-detail-row{
-    background-color: #dddcdf;
+    background-color: #fbf7ee;
 }
 /* update/delete cursor in shopping bag */
 .btt-link, .update-link, .remove-item {
@@ -176,9 +187,9 @@ cursor: pointer;
 }
 
 .flip-card {
-  background-color: #dddcdf;
-  width: 550px;
-  height: 550px;
+  background-color: #fbf7ee;
+  width: 500px;
+  height: 500px;
   border: none;
   perspective: 1000px;
 }
@@ -190,6 +201,14 @@ cursor: pointer;
   text-align: left;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+}
+
+h1.album-title {
+    text-align: center;
+}
+
+h4.track-list {
+    margin-left: 5px;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -205,7 +224,7 @@ cursor: pointer;
 }
 
 .flip-card-back {
-  background-color: #dddcdf;
+  background-color: #fbf7ee;
   color: black;
   transform: rotateY(180deg);
 }

@@ -174,8 +174,9 @@
       </div>
     </div>
   </div>
-  {% endblock %} {% block postloadjs %} {{ block.super }} {% include
-  'products/includes/quantity_input_script.html' %}
+  {% endblock %} {% block postloadjs %} {{ block.super }} 
+  {% include 'products/includes/quantity_input_script.html' %}
+  {% include 'includes/toasts/toast_success.html' %}
 
   <script type="text/javascript">
     // Update quantity on click

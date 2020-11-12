@@ -173,6 +173,10 @@ div#delivery-banner {
   margin-bottom: 20px;
 }
 
+.bg-white {
+    background-color: #e3dcca;
+}
+
 /* Table bag content */
 .table-header {
     text-align: center;

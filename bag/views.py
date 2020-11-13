@@ -46,7 +46,7 @@ def add_to_bag(request, item_id):
 
 def update_bag(request, item_id):
     """Updates the quantity and amount of products when adjusted"""
-
+    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     size = None
     if 'product_size' in request.POST:
@@ -76,7 +76,7 @@ def update_bag(request, item_id):
 
 def delete_from_bag(request, item_id):
     """Delete an item from the bag"""
-
+    product = Product.objects.get(pk=item_id)
     try:
         size = None
         if 'product_size' in request.POST:

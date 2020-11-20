@@ -229,6 +229,7 @@ h2.mb-4.shoppingbag-text {
   left: 0;
   position: fixed;
   z-index: -1;
+  background-color: #dddddf;
 }
 
 /* arrows scroll-up */

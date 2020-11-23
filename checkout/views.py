@@ -13,6 +13,7 @@ import stripe
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
+
     bag = request.session.get('bag', {})
     if not bag:
         messages.error(request, "Your bag is currently empty")
@@ -33,9 +34,10 @@ def checkout(request):
             Did you forget to set it in your environment?')
 
     template = 'checkout/checkout.html'
+
     context = {
         'order_form': order_form,
-        'stripe_public_key': stripe_public_key,
+        'stripe_public_key': 'pk_test_51HqeKjAIW885gQOzydxZtfVN2Ab6IasAujqLJQxoOAKPfgjgb8xPaZRVryNJmqy1mb6K2qmiUkwYQbdSqfwKiuQB0037umFeHU',
         'client_secret': intent.client_secret,
     }
 

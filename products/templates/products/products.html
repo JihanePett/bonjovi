@@ -9,7 +9,7 @@
 
 <div class="dropdown">
   <button
-    class="btn btn-secondary dropdown-toggle sort-btn"
+    class="btn btn-white dropdown-toggle sort-btn"
     type="button"
     id="dropdownMenuButton"
     data-toggle="dropdown"
@@ -46,7 +46,7 @@
         <div class="col-sm-8 col-md-8 col-lg-4 col-xl-3">
           <div class="card h-100 border-0">
             {% if product.image %}
-            <a href="{% url 'product_detail' product.id %}" target="_blank">
+            <a href="{% url 'product_detail' product.id %}">
               <img
                 class="card-img-top img-fluid"
                 src="{{ product.image.url }}"

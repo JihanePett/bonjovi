@@ -64,7 +64,6 @@ input.form-control.border.border-black.rounded-0.search-form[type=text]:focus {
 }
 
 /* bootstrap toasts */
-
 .message-container {
     position: fixed;
     top: 72px;
@@ -221,7 +220,7 @@ h2.mb-4.shoppingbag-text {
   color: #fbf7ee;
 }
 
-/* overlay */
+/* overlays */
 .overlay {
   height: 100%;
   width: 100%;
@@ -229,7 +228,7 @@ h2.mb-4.shoppingbag-text {
   left: 0;
   position: fixed;
   z-index: -1;
-  background-color: #dddddf;
+  background-color: #fafafa;
 }
 
 /* arrows scroll-up */
@@ -341,3 +340,4 @@ h4.track-list {
       display: none;
   }
 }
+

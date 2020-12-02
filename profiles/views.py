@@ -5,6 +5,6 @@ from django.shortcuts import render
 
 def profile(request):
     """ To display the user profile """
-    template = 'profiles/profiles.html'
+    template = 'profiles/profile.html'
     context = {}
     return render(request, template, context)

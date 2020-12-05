@@ -221,6 +221,10 @@ h2.mb-4.shoppingbag-text {
   text-decoration: none;
 }
 
+.btn-white:hover{
+    text-decoration: none;
+}
+
 .out-now-button:hover,
 .out-now-button:active,
 .out-now-button:focus,

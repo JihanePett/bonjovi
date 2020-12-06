@@ -1,5 +1,6 @@
-<!DOCTYPE html>
 {% load static %}
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     {% block meta %}
@@ -9,7 +10,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    {% endblock %} {% block extra-meta %} {% endblock %} {% block corecss %}
+    {% endblock %}
+
+    {% block extra-meta %}
+    {% endblock %}
+    
+    {% block corecss %}
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -21,7 +27,12 @@
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
     />
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
-    {% endblock %} {% block extra-css %} {% endblock %} {% block corejs %}
+    {% endblock %} 
+    
+    {% block extra-css %}
+    {% endblock %}
+    
+    {% block corejs %}
     <script
       src="https://kit.fontawesome.com/e9c73d7092.js"
       crossorigin="anonymous"
@@ -41,14 +52,17 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
-
-
-    {% endblock %} {% block extra-js %} {% endblock %}
+    {% endblock %}
+    
+    {% block extra-js %}
+    {% endblock %}
 
     <title>Bon Jovi</title>
-    {% block extra-title %} {% endblock %}
+    {% block extra-title %}
+    {% endblock %}
   </head>
   <body>
     <header class="container-fluid fixed-top-desktop-only" id="myHeader">

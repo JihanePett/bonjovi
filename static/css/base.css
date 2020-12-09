@@ -262,6 +262,10 @@ h2.mb-4.shoppingbag-text {
   right: 10px;
 }
 
+i.fas.fa-arrow-up.mx-auto.my-auto {
+    color: #9f9b9d;
+}
+
 .arrow-up-link {
   cursor: pointer;
 }
@@ -325,6 +329,15 @@ h4.track-list {
   transform: rotateY(180deg);
 }
 
+/*--------------------------------- Footer*/
+footer.page-footer.pt-4 {
+    background-color: black;
+}
+
+a.btn-floating{
+    font-size: 30px;
+    color: white;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

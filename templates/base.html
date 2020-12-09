@@ -182,7 +182,49 @@
     
     {% block content %} 
     {% endblock %} 
-    
+
+    {% block footer %}
+        <!-- Footer -->
+<footer class="page-footer pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating mx-1" href="https://www.facebook.com/BonJovi/" target="_blank">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating mx-1" href="https://www.instagram.com/bonjovi/" target="_blank">
+          <i class="fab fa-instagram"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating mx-1" href="https://twitter.com/bonjovi" target="_blank">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating mx-1" href="https://www.youtube.com/user/bonjovi" target="_blank">
+          <i class="fab fa-youtube"> </i>
+        </a>
+      </li> 
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-white py-3">© 2020 Copyright: JBJ</div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    {% endblock %}    
     {% block postloadjs %}
     <script type="text/javascript">
       $(".toast").toast("show");

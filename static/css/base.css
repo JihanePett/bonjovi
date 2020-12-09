@@ -152,6 +152,13 @@ input.form-control.border.border-black.rounded-0.search-form[type="text"]:focus 
   margin-right: 400px;
 }
 
+/* tours section */
+p.cancelledtour {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 /* cards articles */
 .card.card-bj2020 {
   margin-top: 30px;

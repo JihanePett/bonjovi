@@ -13,3 +13,7 @@ def bjcards(request):
 
 def music(request):
     return render(request, 'home/music.html')
+
+
+def tours(request):
+    return render(request, 'home/tours.html')

@@ -342,6 +342,14 @@ a.btn-floating{
     font-size: 30px;
     color: white;
 }
+
+ul.list-unstyled.list-inline.text-center.social-footer {
+    margin-right: 150px;
+}
+
+.copyright-footer {
+    margin-right: 150px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

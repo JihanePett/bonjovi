@@ -381,7 +381,7 @@ ul.list-unstyled.list-inline.text-center.social-footer {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-  .header-container {
+  .header-container-f {
     padding-top: 116px;
   }
 
@@ -390,9 +390,6 @@ ul.list-unstyled.list-inline.text-center.social-footer {
     padding-top: 0;
   }
 
-  .nav-logo {
-    display: none;
-  }
 }
 
 /* Allauth form formatting */

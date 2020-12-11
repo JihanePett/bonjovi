@@ -21,8 +21,8 @@ body {
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  height: 1.1rem;
-  width: 1.1rem;
+  height: 1rem;
+  width: 1rem;
   color: #fbf7ee;
 }
 
@@ -34,6 +34,10 @@ i.fas.fa-minus {
 
 i.fas.fa-chevron-left:hover {
   color: #fbf7ee;
+}
+
+.nav-icon{
+    font-size: 25px;
 }
 
 /* Search form */
@@ -359,6 +363,11 @@ a.btn-floating{
 
   .header-container {
     padding-top: 164px;
+  }
+
+  .container-fluid.fixed-top-desktop-only{
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 

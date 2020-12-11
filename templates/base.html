@@ -67,26 +67,37 @@
   <body>
     <header class="container-fluid fixed-top-desktop-only" id="myHeader">
       <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
-        <div class="col-12 align-self-start col-lg-4 my-auto py-1 py-lg-0">
-          <form method="GET" action="{% url 'products' %}">
-            <div class="input-group w-100">
-              <input
-                class="border border-white rounded-0 search-form"
-                type="text"
-                name="q"
-                placeholder="Search our site"
-              />
-              <div class="input-group-append">
-                <button class="btn border border-white rounded-0" type="submit">
-                  <span class="icon">
-                    <i class="fas fa-search"></i>
-                  </span>
-                </button>
-              </div>
+          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+    <!-- Social buttons -->
+            <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                    <a class="btn-floating mx-1" href="https://www.facebook.com/BonJovi/" target="_blank">
+                    <i class="fab fa-facebook-f nav-icon"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating mx-1" href="https://www.instagram.com/bonjovi/" target="_blank">
+                    <i class="fab fa-instagram nav-icon"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating mx-1" href="https://twitter.com/bonjovi" target="_blank">
+                    <i class="fab fa-twitter nav-icon"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating mx-1" href="https://www.youtube.com/user/bonjovi" target="_blank">
+                    <i class="fab fa-youtube nav-icon"> </i>
+                    </a>
+                </li> 
+            </ul>
+            <!-- Social buttons -->        
             </div>
-          </form>
+
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         </div>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 offset-md-4">
+
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown">
               <a
@@ -187,10 +198,8 @@
     {% block footer %}
         <!-- Footer -->
 <footer class="page-footer pt-4">
-
-  <!-- Footer Elements -->
+          <!-- Footer Elements -->
   <div class="container">
-
     <!-- Social buttons -->
     <ul class="list-unstyled list-inline text-center">
       <li class="list-inline-item">
@@ -215,10 +224,28 @@
       </li> 
     </ul>
     <!-- Social buttons -->
-
   </div>
   <!-- Footer Elements -->
 
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 offset-4">
+          <form method="GET" action="{% url 'products' %}">
+            <div class="input-group w-100">
+              <input
+                class="border border-white rounded-0 search-form"
+                type="text"
+                name="q"
+                placeholder="Search our site"
+              />
+              <div class="input-group-append">
+                <button class="btn border border-white rounded-0" type="submit">
+                  <span class="icon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
   <!-- Copyright -->
   <div class="footer-copyright text-center text-white py-3">© 2020 Copyright: JBJ</div>
   <!-- Copyright -->

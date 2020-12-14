@@ -289,8 +289,8 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
 
 .flip-card {
     background-color: white;
-    width: 500px;
-    height: 500px;
+    width: 480px;
+    height: 480px;
     border: none;
     perspective: 1000px;
     margin-bottom: 20px;
@@ -455,10 +455,6 @@ ul.list-unstyled.list-inline.text-center.social-footer {
         right: 0;
         left: 0;
         z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
     }
 }
 

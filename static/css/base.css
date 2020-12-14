@@ -474,4 +474,8 @@ ul.list-unstyled.list-inline.text-center.social-footer {
       display: none;
   }
 
+  .carousel-caption.top-caption {
+      margin-bottom: 0;
+}
+
 }

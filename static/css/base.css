@@ -362,9 +362,14 @@ h4.track-list {
 
 
 /*--------------------------------- Footer*/
-footer.page-footer.pt-4 {
-    background-color: black;
-    margin-top: 50px;
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
 }
 
 a.btn-floating {

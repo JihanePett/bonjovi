@@ -255,6 +255,16 @@ h2.mb-4.shoppingbag-text {
     background-color: white;
 }
 
+.overlay-login{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+    background-color: #403e3e;
+}
+
 /* arrows scroll-up */
 .arrow-up-button {
     height: 42px;
@@ -378,11 +388,7 @@ a.btn-floating {
 }
 
 ul.list-unstyled.list-inline.text-center.social-footer {
-    margin-right: 150px;
-}
-
-.copyright-footer {
-    margin-right: 150px;
+    padding-top: 20px;
 }
 
 /* Allauth form formatting */
@@ -435,7 +441,18 @@ ul.list-unstyled.list-inline.text-center.social-footer {
 }
 
 .allauth-form-inner-content a {
-    color: #17a2b8; /* text-info */
+    color: #e73d3e; /* text-info */
+    text-decoration: none;
+}
+
+a.btn.btn-light.allauth-a-light {
+    color: black;
+}
+
+.fb-login{
+    font-size: 30px;
+    margin-left: 30px;
+    color: white;
 }
 
 /* -------------------------------- Media Queries */

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
     'home',
     'products',
     'bag',
@@ -49,6 +50,12 @@ INSTALLED_APPS = [
     'crispy_forms',
     'profiles',
 ]
+
+SOCIALACCOUNT_PROVIDERS = {'facebook': {'METHOD': 'oauth2', 'SCOPE': ['email'],
+                                        'AUTH_PARAMS':
+                                        {'auth_type': 'reauthenticate'},
+                                        'LOCALE_FUNC': lambda request: 'en_US',
+                                        'VERSION': 'v2.4'}}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

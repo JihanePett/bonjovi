@@ -293,8 +293,9 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
 }
 
 /* The flip card container */
-.flip-card-row {
-    margin-bottom: 20px;
+.card-deck .card-deck-flipcard {
+  margin-left: 20px;
+  margin-bottom: 50px;
 }
 
 .flip-card {
@@ -303,6 +304,7 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
     height: 480px;
     border: none;
     perspective: 1000px;
+    margin-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -493,5 +495,15 @@ a.btn.btn-light.allauth-a-light {
     .carousel-caption.top-caption {
         margin-bottom: 0;
     }
+
+    .flipcard-img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .flip-card {
+    width: 300px;
+    height: 300px;
+}
 
 }

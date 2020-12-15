@@ -1,5 +1,5 @@
-
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect,\
+                             reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -81,7 +81,7 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't\
+                        "One of the products in your cart wasn't\
                          found in our database. "
                         "Please call us for assistance!")
                     )
@@ -98,8 +98,8 @@ def checkout(request):
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in\
-                                     your bag at the moment")
+            messages.error(request, "Your cart is\
+                                     currently empty")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -174,7 +174,7 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-    messages.success(request, f'Order successfully processed! \
+    messages.success(request, f'Your Order is successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 

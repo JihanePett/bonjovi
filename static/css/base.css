@@ -42,7 +42,11 @@ i.fas.fa-chevron-left:hover {
 /* Search form */
 .search-form {
     background-color: transparent;
-    color: #fbf7ee;
+    color: black;
+}
+
+i.fas.fa-search.search-icon {
+    color: #5d5d60;
 }
 
 input.form-control.border.border-black.rounded-0.search-form[type="text"] {
@@ -156,9 +160,10 @@ input.form-control.border.border-black.rounded-0.search-form[type="text"]:focus 
 
 /* tours section */
 p.cancelledtour {
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 5px;
 }
 
 /* cards articles */
@@ -375,6 +380,7 @@ h4.track-list {
 
 /*--------------------------------- Footer*/
 .footer {
+   position: fixed; 
    left: 0;
    bottom: 0;
    width: 100%;

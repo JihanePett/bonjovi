@@ -380,6 +380,9 @@ h5.track-list {
     border-radius: 0;
 }
 
+.cancelledtour{
+    text-transform: uppercase;
+}
 
 /*--------------------------------- Footer*/
 .footer {
@@ -517,6 +520,11 @@ a.btn.btn-light.allauth-a-light {
 
     .row.search-box {
     margin-top: 5px;
+}
+    
+    img.d-block.w-100.tour-img {
+    margin-top: 20px;
+    height: 18vh;
 }
 
 }

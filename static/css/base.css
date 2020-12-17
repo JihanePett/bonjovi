@@ -305,8 +305,8 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
 
 .flip-card {
     background-color: white;
-    width: 480px;
-    height: 480px;
+    width: 400px;
+    height: 400px;
     border: none;
     perspective: 1000px;
     margin-right: 20px;
@@ -322,14 +322,18 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
     transform-style: preserve-3d;
 }
 
-h1.album-title {
-    text-align: center;
+.flipcard-img{
+    width: 400px;
+    height: 400px;
 }
 
-h4.track-list {
+h5.track-list {
     margin-left: 5px;
 }
 
+.track-list{
+    font-size: 13px;
+}
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
@@ -350,7 +354,6 @@ h4.track-list {
 }
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -503,13 +506,17 @@ a.btn.btn-light.allauth-a-light {
     }
 
     .flipcard-img{
-        width: 300px;
-        height: 300px;
+        width: 355px;
+        height: 355px;
     }
 
     .flip-card {
-    width: 300px;
-    height: 300px;
+    width: 355px;
+    height: 355px;
+}
+
+    .row.search-box {
+    margin-top: 5px;
 }
 
 }

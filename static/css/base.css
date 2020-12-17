@@ -301,13 +301,13 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
 
 .flip-card {
     background-color: white;
-    width: 400px;
-    height: 400px;
+    width: 480px;
+    height: 480px;
     border: none;
     perspective: 1000px;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .flip-card-inner {
@@ -320,8 +320,8 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
 }
 
 .flipcard-img{
-    width: 400px;
-    height: 400px;
+    width: 480px;
+    height: 480px;
 }
 
 h5.track-list {
@@ -509,25 +509,27 @@ a.btn.btn-light.allauth-a-light {
         margin-bottom: 0;
     }
 
-    .flipcard-img{
-        width: 355px;
-        height: 355px;
-    }
-
     .flip-card {
     width: 355px;
     height: 355px;
     margin-left: 0;
     margin-right: 0;
 }
+    .flipcard-img{
+    width: 355px;
+    height: 355px;
+}
 
     .row.search-box {
     margin-top: 5px;
 }
     
-    img.d-block.w-100.tour-img {
-    margin-top: 20px;
-    height: 18vh;
+    img.tour-img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 16vh;
 }
+
 
 }

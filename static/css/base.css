@@ -212,10 +212,6 @@ h2.mb-4.shoppingbag-text {
     margin-top: 20px;
 }
 
-.table-responsive.rounded {
-    background-color: #fafafa;
-}
-
 /* Buttons */
 .sort-btn {
     margin-left: 50px;
@@ -226,13 +222,13 @@ h2.mb-4.shoppingbag-text {
 .findout-button {
     background: #fbf7ee;
     color: black;
-    min-width: 260px;
     text-decoration: none;
 }
 
 .btn-white {
-    color: black;
+    color: white;
     text-decoration: none;
+    background-color: #676767;
 }
 
 .btn-white:hover {
@@ -311,6 +307,7 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
     perspective: 1000px;
     margin-right: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .flip-card-inner {
@@ -354,6 +351,11 @@ h5.track-list {
 }
 
 /* Product Form */
+.row.search-box {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -386,7 +388,6 @@ h5.track-list {
 
 /*--------------------------------- Footer*/
 .footer {
-   position: fixed; 
    left: 0;
    bottom: 0;
    width: 100%;
@@ -516,6 +517,8 @@ a.btn.btn-light.allauth-a-light {
     .flip-card {
     width: 355px;
     height: 355px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
     .row.search-box {

@@ -5,18 +5,18 @@
     <!-- Overlay -->
     <div class="overlay"></div>
     <!-- Search -->
-    <div class="row search-box>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 offset-4">
+    <div class="row search-box">
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <form method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
                     <input class="border border-black rounded-0 search-form" type="text" name="q" placeholder="Search our boutique"/>
-                    <div class="input-group-append">
-                        <button class="btn border border-black rounded-0" type="submit">
-                            <span class="icon">
-                                <i class="fas fa-search search-icon"></i>
-                            </span>
-                        </button>
-                    </div>
+                        <div class="input-group-append">
+                            <button class="btn border border-black rounded-0" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search search-icon"></i>
+                                </span>
+                            </button>
+                        </div>
                 </div>
             </form>
         </div>
@@ -62,7 +62,6 @@
                                                 ${{ product.price }}
                                             </p>
                                             {% if product.category %}
-
                                                 <p class="small mt-1 mb-0">
                                                     <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
                                                         <i class="fas fa-tag mr-1"></i>
@@ -73,9 +72,7 @@
                                             {% if product.rating %}
                                                 <small class="text-muted">
                                                     <i class="fas fa-star mr-1"></i>
-                                                    {{ product.rating }}
-                                                    /
-                                                                        5</small>
+                                                    {{ product.rating }}/ 5</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}

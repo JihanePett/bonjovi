@@ -167,5 +167,8 @@ I have chosen to ignore the warning as it is relating to the color for the allau
 
 **W3C HTML Validator**
 Warning: Empty heading in my loading spinner I have decided to ignore in my checkout.html
+Most of the errors displayed are from the use of the jinja templates and I have been advised to ignore them
 
-
+**PEP8**
+settings.py: the line too long 'problem' can't be resolved as when I did it broke my register an account link. I have been advised to leave it like that.
+the Product has no object member error from pylint is also to be ignore

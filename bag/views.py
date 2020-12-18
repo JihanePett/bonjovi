@@ -50,8 +50,8 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url)
 
 
-def update_bag(request, item_id):
-    """Updates the quantity and amount of products when adjusted"""
+def adjust_bag(request, item_id):
+    """adjusts the quantity and amount of products when adjusted"""
     product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     size = None
@@ -87,7 +87,7 @@ def update_bag(request, item_id):
     return redirect(reverse('view_bag'))
 
 
-def delete_from_bag(request, item_id):
+def remove_from_bag(request, item_id):
     """Delete an item from the bag"""
     product = Product.objects.get(pk=item_id)
     try:

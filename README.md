@@ -168,3 +168,4 @@ I have chosen to ignore the warning as it is relating to the color for the allau
 **W3C HTML Validator**
 Warning: Empty heading in my loading spinner I have decided to ignore in my checkout.html
 
+

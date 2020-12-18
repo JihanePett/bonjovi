@@ -66,28 +66,58 @@ and also making sure all the images load properly before logging out safely.
 ## Wireframes
 
 ## Features
+**Branded design and easy navigation:** the jbj boutique is easy to navigate to, the products are displayed in cards where all details ie price are
+available, when a user click on the product image, it brings them to an individual product detail page they can select the size when appropriate, the quantities and 
+more importantly they can purchase.
+**User-focused order functionality:** Once the user select the product he/she wants to purchase and they want to complete their order, by clicking on secure checkout on either the toast message 
+or the actual checkout page, it directs them to a secure checkout where they are asked to fill up their order details ie name, email, address before submitting their card details.
+**Social media:** as we are in difficult time it is important to give the users the ability to stay connected with the band in all means especially through their active social media platforms.
+**Music buying and streaming:** With all the legality involved around music, it is important to provide the user with the right channels.
+
 
 ## Features for the future
+**Social media integration:** giving the ability to user to sign up with facebook 
+**Youtube livestream:** with what is happening today, most gatherings such as concerts have been cancelled, a user will definetly enjoy the band's future live streaming online through youtube
+**Tour dates:** as soon as the concerts are back on, add the ability to purchase/book tickets online
 
-## 
+## technologies used
+**HTML**: for site layout
+**CSS**: content structure and layout
+**:Javascript/jquery:** used to add some animations
+**Python:** programming language
+**Github and gitpod**
+**Fontawesome:** for icons
+****
 
+# Heroku deployment
 
+Once the jbj site was set I have deployed with Heroku.
 
+**deployment steps:**
+First create a new app on heroku site by clicking new and create new app, I gave it the next available but close to my gitpod project name: jbonjovi.
+then I chose europe as a region. On the resources tab, I provisioned a new Postgres database.
+then installed dj_database_url, and psycopg2 in gitpod so to be able to use the postgres with accordingly pip3 install dj_database_url and pip3 install psycopg2-binary
+then I froze the requirements with pip3 freeze > requirements.txt
+To set up the new database I imported dj_database_url, commented out the default configuration and replaced the default database with a call to dj_database_url.parse, adding the url databse data from heroku
+After that I ran the migrations with Python 3 manage.py migrate.
+Followed by loading the fixtures, first categories python3 manage.py load data categories, then products with  python3 manage.py loaddata products
+After that I have created with python3 manage.py create superuser.
+Before commiting these changes I have uncommented the database default config.
+At this stage I have added a piece of code on the app settings so that I can open my app either with heroku or on localhost.
+The next step, I installed gunicorn with pip3 install gunicorn, created a Procfile and disabled collectstatic as I want this to be stored in S3 service from AWS.
+this required to add the hostname into the app settings.py
+I then initialised heroku remote in gitpod, logged in heroku through gitpod and pushed the code.
+After that I realised my secret keys were bare so created a env.py and stored my secret keys in there and also added the secret keys in settings tab reveal var in heroku too.
+My next step was to set up the automatic deployment on the heroku site simply by linking my repository through heroku and chosing the automatic deploy otpion offered on the page.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+PS: STEPS TO SET UP AN ENV.PY:
+    --Create a file named env.py in the root directory of your project. This is the file you will use to define your environment variables.
+    --If you don't have one already, create a file named .gitignore  in the root directory of your project.
+    --Next we need to stop git from pushing this file to github, and so keep your environment variables secret. To do this, open your .gitignore  file add the following text to it: env.py 
+    --At the top of your env.py  file, you need to import os so that you can set the environment variables in the operating system. Once you have added the line “import os” underneath you can assign your environment variables using the following syntax: 
+    --os.environ["Variable Name Here"] = "Value of Variable Goes Here" 
+    --Example: os.environ["SECRET_KEY"] = "ohsosecret" 
+    --Then the following code imports this new env.py file where you need to use your environment variables. For example your app.py file for flask project or settings.py file for Django project. Add this under your other imports at the top of the file. 
+    import os
+    if os.path.exists("env.py"):
+    import env 

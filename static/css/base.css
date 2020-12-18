@@ -76,8 +76,6 @@ input.form-control.border.border-black.rounded-0.search-form[type="text"]:focus 
 /* dropdwon menu*/
 .dropdown-menu {
     color: #212529;
-    background-color: none;
-    background-clip: none;
     border: none;
     border-radius: 0.3rem;
 }
@@ -159,6 +157,12 @@ input.form-control.border.border-black.rounded-0.search-form[type="text"]:focus 
 }
 
 /* tours section */
+.container-fluid.tour-img {
+
+    padding-right: 0;
+    padding-left: 0;
+
+}
 p.cancelledtour {
     font-size: 40px;
     text-transform: uppercase;
@@ -305,9 +309,9 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
     height: 480px;
     border: none;
     perspective: 1000px;
-    margin-right: 40px;
+    margin-right: 20px;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .flip-card-inner {

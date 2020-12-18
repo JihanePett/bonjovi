@@ -87,10 +87,18 @@ or the actual checkout page, it directs them to a secure checkout where they are
 **Python:** programming language
 **Github and gitpod**
 **Fontawesome:** for icons
-****
+**Django**
+**Heroku**
+**Stripe**
+**AWS**
+
+## tools used
+**Wireframes** to create the wireframes
+**W£C HTML Validator** to proof html  files
+**PEP8 validator** to proof python files
+**Autoprefixed** to check css code
 
 # Heroku deployment
-
 Once the jbj site was set I have deployed with Heroku.
 
 **deployment steps:**
@@ -121,3 +129,42 @@ PS: STEPS TO SET UP AN ENV.PY:
     import os
     if os.path.exists("env.py"):
     import env 
+
+To store the static files, I have created a AWS account, and on the S3 service created a new bucket and opened its access to the public, added a few settings on static website hosting, then
+on permissions tab where I pasted in a coors configuration then on the bucket policy tab the type being s3 bucket policy and the action getobject, added the ARN clicked on statement and generate policy which I copied into the bucket policy editor.
+To allow access to all I added /* at the end of my resource key.
+Onto the IAM service, to create a new user. I created a group first then created a policy which is a generic one from json import managed policy.
+I had to copy the ARN from the bucket again.
+then click review policy give it a name and click create policy.
+The last step is to create a user bonjovi-staticfiles-user with programmatic access and add it to our group. once saved a .csv is generated that I have saved as it holds all secret keys to add into my heroku settings reveal var.
+Following this I had to install pip3 install boto3 and pip3 install django-storages and added the corresponding settings in gitpod: AWS_STORAGE_BUCKET_NAME and  AWS_S3_REGION_NAME then remove the disable collectstatic variable add the new secret keys into my env.py, write the 
+corresponding code into the settings.py and run python3 manage.py collectstatic.
+A quick look at the s3 site and I could see my static files uploaded. For the media files I have created a media folder into s3 right where my static folder is and added the products images from there.
+To finalise the deployment I verified and confirmed my superuser email through the heroku admin platform and added the heroku url to stripe as well as the stripe keys into my heroku var.
+
+**testing deployment:**
+If the above deployment is a success than my app will open successfully which it did.
+The next step is regarding to the webhooks which I tested by going on the stripe send webhook test and it was successfully
+Now onto the order. While ordering a random project and filling all the details required at checked out, checking stripe message: success.
+My app is now deployed properly.
+
+# Manual testing
+I have manually tested my site continuously through firefox, chrome on tablet and phone huawei and samsung
+On logo click the user was directed successfully to the homepage
+On any of the menu clicked, the user was directed successfully to its corresponding page
+On the account options the user had options as to either register or login. If the user was a superuser then the account was showing an etra 2 options in the dropdown: the profile as well as the product management
+when the user is a returning customer than his profile was successfully added.
+All social links are opening in a new page as well as all the album buy or stream music button links.
+I have manually tested all screen resolutions using the inspect on chrome browser with successfull results.
+
+# Automated testing
+Whenever an issue arised ie an error not clear to resolved I would add a print statement to parts of my codes which became very handy as to point to what went wrong.
+
+**W3C CSS Validator**
+2 errors popped: .dropdown-menu: Value Error : background-color none is not a background-color value : none and none is not a background-clip value : none
+which I removed from the original file.
+I have chosen to ignore the warning as it is relating to the color for the allauth section.
+
+**W3C HTML Validator**
+Warning: Empty heading in my loading spinner I have decided to ignore in my checkout.html
+

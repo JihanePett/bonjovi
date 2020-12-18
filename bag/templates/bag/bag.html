@@ -61,7 +61,7 @@
                                 <hr></div>
                             </div>
                         {% endfor %}
-                        <div class="btt-button shadow-sm rounded-0 border border-black">
+                        <div class="btt-button rounded-0 border">
                             <a class="btt-link d-flex h-100">
                                 <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
                             </a>
@@ -197,7 +197,7 @@
                 {{ block.super }}
                 {% include 'products/includes/quantity_input_script.html' %}
                 {% include 'includes/toasts/toast_success.html' %}
-                <script type="text/javascript">
+                <script>
                     // Update quantity on click
                     $(".update-link").click(function (e) {
                         var form = $(this).prev(".update-form");

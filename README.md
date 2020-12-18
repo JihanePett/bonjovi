@@ -58,6 +58,7 @@ As a user having the option to purchase without registering is great.
 However any fan would want to register and have a profile so as a user I am happy to find that option on display on the top navigation.
 When looking at the music page, as a user it shows me what are the latest albums but giving the option to buy or stream enhance my will to listen to the track without worrying about
 the legality of it.
+As a user making a purchase and receiving a confirmation email is important.
 
 As a superuser, it is important for me to know that I am the only person whom can be in charge of the Boutique's product management.
 Once logged in as a superuser, I will be interested in adding a product, editing an existing one, updating and deleting if products are out of stock.

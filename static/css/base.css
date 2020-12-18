@@ -157,6 +157,12 @@ input.form-control.border.border-black.rounded-0.search-form[type="text"]:focus 
 }
 
 /* tours section */
+.container-fluid.tour-img {
+
+    padding-right: 0;
+    padding-left: 0;
+
+}
 p.cancelledtour {
     font-size: 40px;
     text-transform: uppercase;

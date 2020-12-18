@@ -81,12 +81,12 @@ or the actual checkout page, it directs them to a secure checkout where they are
 **Tour dates:** as soon as the concerts are back on, add the ability to purchase/book tickets online
 
 ## technologies used
-**HTML**: for site layout
-**CSS**: content structure and layout
-**:Javascript/jquery:** used to add some animations
-**Python:** programming language
+**HTML** 
+**CSS**
+**Javascript/jquery** 
+**Python** 
 **Github and gitpod**
-**Fontawesome:** for icons
+**Fontawesome** 
 **Django**
 **Heroku**
 **Stripe**
@@ -179,8 +179,7 @@ Tried to sign in as a super user and a random user and both are successful
 
 Testing link on the album tracks:
 The link open in a new page on all screen size
-
-
+http://ami.responsivedesign.is/
 
 # Automated testing
 Whenever an issue arised ie an error not clear to resolved I would add a print statement to parts of my codes which became very handy as to point to what went wrong.
@@ -197,3 +196,15 @@ Most of the errors displayed are from the use of the jinja templates and I have 
 **PEP8**
 settings.py: the line too long 'problem' can't be resolved as when I did it broke my register an account link. I have been advised to leave it like that.
 the Product has no object member error from pylint is also to be ignore
+
+# Credit and media
+The content of articles has been copied from the online official interviews article provided by the corresponding magazines
+The images are also from the official images site
+
+# Acknowledgement
+Thanks to my family for allowing me to follow my dreams
+Thank you to all of the Code Institute Tutors whom have thoroughly helped
+Thank you to my mentor for giving me good spirit
+Thank you assessors for your time
+
+

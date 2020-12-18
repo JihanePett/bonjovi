@@ -303,9 +303,9 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
     height: 480px;
     border: none;
     perspective: 1000px;
-    margin-right: 40px;
+    margin-right: 20px;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .flip-card-inner {

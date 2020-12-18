@@ -157,6 +157,31 @@ when the user is a returning customer than his profile was successfully added.
 All social links are opening in a new page as well as all the album buy or stream music button links.
 I have manually tested all screen resolutions using the inspect on chrome browser with successfull results.
 
+Testing product management:
+I have logged in as a superuser and filled the add products fields before adding the product with an image first then without an image and
+the none image has automatically beiing picked which is a success.
+going onto the same added product, as a superuser I was able to modify the description and update it successfully. 
+Also when I put a wrong amount in the price tab, a toast message appeared asking me to review it. Which is working.
+Then I decided to delete the newly added product and it got processed with no issue.
+
+Testing register:
+I had amended the settings line too long statement in the allauth security questions and it broke my registration capabilities
+so after fixing it I surfed and registered adding a new email and the sign in succeeded
+Upon sign in I was able to go to the boutique add products to my shopping cart and checkout using the generic credit card.
+a toast message accompanied me all the way: when adding a product, when checking out, I also was able to set a profile
+and once done when I logged back in the profile held a history of my previous orders.
+
+Testing links:
+every link opens in a new page
+
+Testing sign in:
+Tried to sign in as a super user and a random user and both are successful
+
+Testing link on the album tracks:
+The link open in a new page on all screen size
+
+
+
 # Automated testing
 Whenever an issue arised ie an error not clear to resolved I would add a print statement to parts of my codes which became very handy as to point to what went wrong.
 

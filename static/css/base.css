@@ -39,6 +39,10 @@ i.fas.fa-chevron-left:hover {
     font-size: 25px;
 }
 
+.fab{
+    color: white;
+}
+
 /* Search form */
 .search-form {
     background-color: transparent;

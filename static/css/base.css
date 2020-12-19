@@ -390,28 +390,15 @@ h5.track-list {
     text-transform: uppercase;
 }
 
-/*--------------------------------- Footer*/
-.footer {
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: center;
-   margin-top: 50px;
-}
-
-a.btn-floating {
-    font-size: 30px;
-    color: white;
-}
-
-ul.list-unstyled.list-inline.text-center.social-footer {
-    padding-top: 20px;
-}
-
+/*--------------------------------- Checkout-success*/
 .text-checkout {
     color: #5b5b5a;
+}
+
+/*--------------------------------- Bag empty */
+a.btn.btn-outline-white.btn-white.rounded-0.btn-lg.bag-empty {
+    display: inline-block;
+    margin-left: 40px;
 }
 
 /* Allauth form formatting */

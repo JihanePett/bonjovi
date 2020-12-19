@@ -64,8 +64,6 @@ As a superuser, it is important for me to know that I am the only person whom ca
 Once logged in as a superuser, I will be interested in adding a product, editing an existing one, updating and deleting if products are out of stock.
 and also making sure all the images load properly before logging out safely.
 
-## Wireframes
-
 ## Features
 **Branded design and easy navigation:** the jbj boutique is easy to navigate to, the products are displayed in cards where all details ie price are
 available, when a user click on the product image, it brings them to an individual product detail page they can select the size when appropriate, the quantities and 

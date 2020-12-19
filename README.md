@@ -198,6 +198,22 @@ Most of the errors displayed are from the use of the jinja templates and I have 
 settings.py: the line too long 'problem' can't be resolved as when I did it broke my register an account link. I have been advised to leave it like that.
 the Product has no object member error from pylint is also to be ignore
 
+# Bugs
+While attempting to add a social media login at the login page, I had followed an online suggestion to put the code into the allauth
+This has lead to couple of issues, the main one being that it didnt work on deployment as when I pushed the new changes to heroku, heroku threw a error the social app is not installed.
+I tried login my heroku admin to set up however heroku threw a 500 server error. Setting the Debug back to True and some investigating prooved that the error was on the SITE_ID.
+Following the social media set up I was advised to delete any other site mentioned in the admin. which I did but then it coonfused both systems so set up the SITE_ID=2
+and everything seemed to be back to normal.
+However depending on the day, gitpod throws some random errors: for instance: DevTools failed to load SourceMap: Could not load content for https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js.map: 
+DevTools failed to load SourceMap: Could not load content for https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js.map: 
+8000-c3711afb-a262-443f-ae98-36c3f9925ac9.ws-eu03.gitpod.io/:1 GET https://8000-c3711afb-a262-443f-ae98-36c3f9925ac9.ws-eu03.gitpod.io/accounts/login/ 500
+the latest: because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+I run the server but my site wouldn't show any style so had to run the server with insecure option. The style is then back on but the webhooks are failing.
+The solution was to set the Gitpod workspace SITE_ID=1 while leaving SITE_ID=2 in heroku.
+I was then able to run the server without the insecure option.
+
+The second bug I faced was my checkout_success doesnt take into consideration my extra css block.
+
 # Credit and media
 The content of articles has been copied from the online official interviews article provided by the corresponding magazines
 The images are also from the official images site

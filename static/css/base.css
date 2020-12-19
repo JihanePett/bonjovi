@@ -410,6 +410,10 @@ ul.list-unstyled.list-inline.text-center.social-footer {
     padding-top: 20px;
 }
 
+.text-checkout {
+    color: #5b5b5a;
+}
+
 /* Allauth form formatting */
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
@@ -468,11 +472,6 @@ a.btn.btn-light.allauth-a-light {
     color: black;
 }
 
-.fb-login{
-    font-size: 30px;
-    margin-left: 30px;
-    color: white;
-}
 
 /* -------------------------------- Media Queries */
 
